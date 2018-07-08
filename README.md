@@ -1,10 +1,20 @@
-# FighthubPrototype
+# Fighthub-Prototype
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Esse projeto é o esqueleto do que virá a ser o fightHub. 
+Para contribuir, faça um fork desse projeto, desenvolva as alterações e solicite um pull request.
 
-## Development server
+[Angular CLI] version 6.0.8.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Instalação passo a passo
+Você precisa ter configurado em sua máquina o NodeJS e o GIT.
+Baixe o instalador em `https://nodejs.org/en/` para NodeJS e em `https://git-scm.com/`, para o GIT;
+
+Depois abra o terminal e digite o comando `npm i -g @angular/cli`;
+
+## Servidor de desenvolvimento
+
+Com tudo configurado execute o comando `ng serve` para ligar o servidor de desenvolvimento. Navegue até `http://localhost:4200/`. 
+
 
 ## Code scaffolding
 

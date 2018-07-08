@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*{
+  font-family: 'Lato', sans-serif;
+
+}
+.fight-form {
+  display: flex;
+  flex-flow: column;
+
+}
+.fight-form label {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  position:relative;
+}
+.fight-form input {
+  width: calc(100% - 10px);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px #bababa;
+}
+.fight-form input[type=file]{
+  display: none;
+}
+.fight-form .float-label {
+  background: #fff;
+  position: absolute;
+  top: -68%;
+  left: 5%;
+  font-family: arial;
+  font-weight: 500;
+  color: #555;
+}
+.fight-form .file-label-btn {
+  background: #c41230;
+  color: #fff;
+  font-weight: 900;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+.fight-form .file-label-btn:hover {
+  background: #f01136;
+}
+
+
+@media screen and (min-width:1024px){
+ .container {
+   width:80%;
+   margin:auto;
+ }
+}

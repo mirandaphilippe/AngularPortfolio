@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+form,
+.container > div {
+  width:45%;
+}
+input[type=submit],
+.register-btn{
+  text-transform: uppercase;
+  background: #eaeaea;
+  width: 50%;
+  box-shadow: none;
+  color: #0e2f44;
+  font-weight: bold;
+}
+.register-btn {
+  cursor: pointer;
+  padding: 5px;
+  background: #0e2f44;
+  color:#fff;
+  text-align: center
+}

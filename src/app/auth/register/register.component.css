@@ -1,0 +1,24 @@
+form {
+  width: 30%;
+    margin: auto;
+}
+input[type=submit],
+.submit-button{
+  text-transform: uppercase;
+  background: #eaeaea;
+  width: 49%;
+  box-shadow: none;
+  color: #0e2f44;
+  font-weight: bold;
+}
+.submit-button {
+  display: block;
+  border:0 ;
+}
+.fire-form-footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+

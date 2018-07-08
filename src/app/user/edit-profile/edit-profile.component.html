@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="edit-profile-form">
+    <div class="step">
+
+      <h3 class="step-title">Personal Info</h3>
+
+      <form class="fight-form">
+
+
+          <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png">
+          <label for="avatar" class="file-label-btn">Select File</label>
+          <div class="avatar-wrapper">
+            <img src="" alt="" class="avatar">
+          </div>
+
+
+        <label for="displayName">
+          <span class="float-label">Full Name</span>
+          <input type="text" [value]="user.displayName">
+        </label>
+        <span class="warning">
+          <p>
+            <strong>Nota:</strong>
+            Outros dados pessoais necessários, mas descartados para manter a simplicidade
+          </p>
+          <ul>
+              <li>Endereço</li>
+              <li>Dados de cobrança</li>
+            </ul>
+        </span>
+      </form>
+
+    </div>
+    <div class="step">
+      <h3 class="step-title">Fighter Info</h3>
+      <form action="" class="fight-form">
+        <label for="height">
+          <span class="float-label custom-label">Height <span class="label-detail">(meters)</span></span>
+          <input (change)="setHeightWeight('height',heightRange.value)" #heightRange type="range" min="0.59" max="2.49" [value]="height" step="0.05">
+          <input (change)="setHeightWeight('height',heightNumber.value)" #heightNumber type="number" min="0.59" max="2.49" [value]="height" step="0.05">
+        </label>
+        <label for="weight">
+            <span class="float-label custom-label">Weight <span class="label-detail">(Kilograms)</span></span>
+            <input (change)="setHeightWeight('weight',weightRange.value)" #weightRange type="range" min="40" max="130" [value]="weight" step="1">
+            <input (change)="setHeightWeight('weight',weighNumber.value)" #weighNumber type="number" min="40" max="130" [value]="weight" step="1">
+          </label>
+      </form>
+    </div>
+    <div class="step">
+      <h3 class="step-title">Team Info</h3>
+      <form action="" class="fight-form">
+        <label for="">
+          <span class="float-label"></span>
+          <input type="text">
+        </label>
+      </form>
+    </div>
+  </div>
+</div>

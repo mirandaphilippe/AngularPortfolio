@@ -1,0 +1,35 @@
+<div class="container">
+    <form [formGroup]="registerForm" class="fight-form"(ngSubmit)="registerUser()" >
+        <label for="username">
+            <span class="float-label">Username:</span>
+           <input type="text" formControlName="username">
+        </label>
+        <label for="email">
+            <span class="float-label">E-mail:</span>
+            <input type="email" formControlName="email">
+        </label>
+        <label for="password">
+
+            <span class="float-label">Password:</span> <input type="password" formControlName="password">
+        </label>
+        <label for="confirm-password">
+
+            <span class="float-label">Confirm Password:</span>  <input type="password" formControlName="confirmPassword">
+        </label>
+        <div class="fire-form-footer">
+            <button routerLink="/auth/login" type="button"class="submit-button">Fazer Login</button>
+            <input  type="submit">
+        </div>
+      </form>
+      <div>
+        <h3>Aviso</h3>
+        <p> Esta é uma versão protótipo para testes da plataforma,
+            portanto os dados armazenados aqui serão descartados no lançamento da versão final.
+        </p>
+        <p>
+            <strong>Testers</strong>
+            Favor declarar as sugestões no formulário específico, no rodapé da página
+        </p>
+      </div>
+
+</div>

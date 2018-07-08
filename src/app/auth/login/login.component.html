@@ -1,0 +1,34 @@
+
+<div class="container">
+    <form [formGroup]= "loginForm" class="fight-form" (ngSubmit)="emailLogin()" >
+        <label for="login">
+          <span class="float-label">E-mail:</span>
+           <input type="email" formControlName="email">
+        </label>
+        <label for="password">
+
+          <span class="float-label">Password:</span>
+          <input type="password" formControlName="password">
+        </label>
+        <input type="submit" (click)="emailLogin()">
+      </form>
+
+      <div>
+          <h2>
+              Does not have an account?
+            </h2>
+              <div class="register-btn" routerLink="/auth/register">
+                Register
+              </div>
+              <h3>Aviso</h3>
+              <p> Esta é uma versão protótipo para testes da plataforma,
+                  portanto os dados armazenados aqui serão descartados no lançamento da versão final.
+              </p>
+              <p>
+                  <strong>Testers</strong>
+                  Favor declarar as sugestões e bugs no formulário específico, fixado no rodapé da página.
+              </p>
+      </div>
+
+
+</div>
