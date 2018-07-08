@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  fireConfig: {
+    apiKey: 'AIzaSyCI5nujqRIIMnFqTTxDWRZ-0mMSb3gRDcY',
+    authDomain: 'fighthub-development.firebaseapp.com',
+    databaseURL: 'https://fighthub-development.firebaseio.com',
+    projectId: 'fighthub-development',
+    storageBucket: 'fighthub-development.appspot.com',
+    messagingSenderId: '604985839781'
+  }
 };
 
 /*
