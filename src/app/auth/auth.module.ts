@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './auth.routes';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 
@@ -15,8 +14,7 @@ import { ToastrService } from 'ngx-toastr';
     ReactiveFormsModule
   ],
   declarations: [
-    LoginComponent,
-    RegisterComponent
+    LoginComponent
   ],
   providers: [
     ToastrService

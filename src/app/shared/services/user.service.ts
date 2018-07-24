@@ -5,6 +5,7 @@ import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firesto
 import { AuthService } from './auth.service';
 import { Observable, of } from 'rxjs';
 import { switchMap, mergeMap, tap, filter } from 'rxjs/operators';
+import { JobDetail } from '../interfaces/jobDetail.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -32,9 +33,6 @@ export class UserService {
       return query;
     }).valueChanges();
     return usersArr;
-
-    // this._db.firestore.collection('test').get()
-    //   .then(ref => console.log(ref.docs, 'get'));
   }
 
   setUserProfile(profile) {
@@ -45,5 +43,12 @@ export class UserService {
     if (this.auth.user) {
 
     }
+  }
+  setJobList (details) {
+    console.log(details);
+    return this._db.collection('jobs').add(details);
+  }
+  getAllJobs() {
+    return this._db.firestore.collection('jobs').orderBy('date', 'desc').get();
   }
 }
