@@ -8,8 +8,8 @@ import { UserService } from '../shared/services/user.service';
 import { ROUTES } from './user.routes';
 
 import { FeedComponent } from './feed/feed.component';
-import { ProfileComponent } from './profile/profile.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [
@@ -18,8 +18,8 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
   ],
   declarations: [
     FeedComponent,
-    ProfileComponent,
-    EditProfileComponent
+    PortfolioComponent,
+    AboutComponent
   ],
   providers: [
     UserService

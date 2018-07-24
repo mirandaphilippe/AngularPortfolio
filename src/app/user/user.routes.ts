@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { FeedComponent } from './feed/feed.component';
-import { ProfileComponent } from './profile/profile.component';
-import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
 
 export const ROUTES: Routes = [
   {
@@ -9,11 +9,11 @@ export const ROUTES: Routes = [
     component: FeedComponent
   },
   {
-    path: 'profile',
-    component: ProfileComponent
+    path: 'jobs',
+    component: PortfolioComponent
   },
   {
-    path: ':username/edit',
-    component: EditProfileComponent
+    path:'about',
+    component: AboutComponent
   }
 ];
