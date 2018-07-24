@@ -1,0 +1,55 @@
+.job-container,
+.tag-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.jobs-container {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap:20px;
+    margin-bottom:40vh;
+}
+.job {
+    width: 100%;
+}
+.thumb {
+    border-bottom: 10px solid transparent;
+    transition:all 0.5s ease;
+}
+.thumb:hover {
+    border-bottom: 10px solid #41ebaf;
+    box-shadow: 11px 11px 6px #ccc;
+    cursor:pointer;
+}
+.thumb img {
+    max-width: 100%;
+}
+.job-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: #0A062D;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 228px);
+    height: 40vh;
+}
+.job-details > div {
+    width:30%;
+    text-align: center;
+}
+.job-details > div a {
+    text-decoration:none;
+    color:#41ebaf;
+}
+.job-details > div p {
+    text-align: justify;
+}
+.tag {
+    padding: 1px 5px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}

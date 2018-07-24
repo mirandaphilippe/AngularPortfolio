@@ -1,2 +1,24 @@
-<app-main-navbar></app-main-navbar>
-<router-outlet></router-outlet>
+<div class="main-nav">
+    <div class="title">
+      <h1> PHILIPPE MIRANDA </h1>
+      <h2>Front-End Developer</h2>
+    </div>
+    <div class="nav-container">
+      <ul class="sections_menu">
+        <li class="menu-link" routerLink="u/jobs" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
+          true}">Portfolio</li>
+        <li class="menu-link"  routerLink="u/about" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
+          true}">Sobre</li>
+        <li class="menu-link"  routerLink="u/portfolio" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
+          true}">Testemunhos</li>
+        <li class="menu-link"  routerLink="u/portfolio" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
+          true}">Contrate</li>
+          <li class="menu-link"  routerLink="u/news" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
+            true}">blog</li>
+      </ul>
+    </div>
+</div>
+
+<div class="main-container">
+    <router-outlet></router-outlet>
+</div>

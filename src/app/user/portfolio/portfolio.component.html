@@ -1,0 +1,26 @@
+<div class="jobs-container">
+    <div class="job" *ngFor="let job of jobList; let i = index">
+        <div class="thumb" (click)="toggleDetails(i)">
+            <img [src]="job.imgUrl" [alt]="job.name">
+        </div>
+    </div>
+</div>
+<div class="job-details" *ngIf="jobDetail as job" [class.visible]="jobList.visible">
+    <div class="info">
+        <h2 class="name">{{job.name}}</h2>
+        <div>
+            <img [src]="job.imgUrl" [alt]="job.name" width="100px">
+        </div>
+        <a [href]="job.url" target="_blank">{{job.url}}</a>
+    </div>
+    <div class="desc">
+        <h4>Sobre</h4>
+        <p>{{job.description}}</p>
+    </div>
+    <div class="tags">
+        <h4>Tecnologias</h4>
+        <div class="tag-container">
+            <span *ngFor="let tag of job.tags" [style.background-color]="randomizeColor()" #jobTag  class="tag">{{tag}}</span>
+        </div>
+    </div>
+</div>

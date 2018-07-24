@@ -1,0 +1,35 @@
+
+<form [formGroup]= "newJobForm" class="fight-form" (ngSubmit)="createNewJob()" >
+ 
+   <input type="file" #asd id="thumb" accept=".jpg, .jpeg, .png">
+  <label for="jobName">
+    <span class="float-label">Job Name:</span>
+     <input type="text" formControlName="jobName">
+  </label>
+  <label for="url">
+      <span class="float-label">Job URL:</span>
+       <input type="text" formControlName="url">
+    </label>
+  <label for="companyName">
+    <span class="float-label">Company Name:</span>
+    <input type="text" formControlName="companyName">
+  </label>
+  <label for="description">
+    <span class="float-label">Job Description</span>
+    <textarea type="text" formControlName="description">
+      </textarea>
+  </label>
+  <label for="finishedStatus">
+    <span class="float-label">Finished</span>
+    <input type="checkbox" value="false" formControlName="finishedStatus">
+  </label>
+  <label for="date">
+    <span class="float-label">Date</span>
+    <input type="date" formControlName="date">
+  </label>
+  <label for="tags">
+      <span class="float-label">Tags <small>(Separeted by comma)</small></span>
+      <input type="text" formControlName="tags">
+    </label>
+  <input type="submit">
+</form>

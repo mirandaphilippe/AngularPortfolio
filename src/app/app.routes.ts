@@ -1,12 +1,11 @@
 import { Routes } from '@angular/router';
-import { RegisterComponent } from './auth/register/register.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
-import { LoginComponent } from './auth/login/login.component';
+import { CreateJobComponent } from './shared/components/create-job/create-job.component';
 
 
 export const ROUTES: Routes = [
     {
-        path: 'user',
+        path: 'u',
         loadChildren: './user/user.module#UserModule'
     },
     {
@@ -15,9 +14,13 @@ export const ROUTES: Routes = [
     },
     {
         path: '',
-        redirectTo: 'auth/register',
+        redirectTo: 'u/jobs',
         pathMatch: 'full'
     },
+    {
+        path: 'create',
+        component: CreateJobComponent,
+      },
     {
       path: 'notFound',
       component: NotFoundComponent,

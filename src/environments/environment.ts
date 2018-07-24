@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   fireConfig: {
-    apiKey: 'AIzaSyCI5nujqRIIMnFqTTxDWRZ-0mMSb3gRDcY',
-    authDomain: 'fighthub-development.firebaseapp.com',
-    databaseURL: 'https://fighthub-development.firebaseio.com',
-    projectId: 'fighthub-development',
-    storageBucket: 'fighthub-development.appspot.com',
-    messagingSenderId: '604985839781'
+    apiKey: "AIzaSyC8pjQpOh2K_XcBhvYpk6gifzCaZ585IlI",
+    authDomain: "philippe-portifolio.firebaseapp.com",
+    databaseURL: "https://philippe-portifolio.firebaseio.com",
+    projectId: "philippe-portifolio",
+    storageBucket: "philippe-portifolio.appspot.com",
+    messagingSenderId: "853016257158"
   }
 };
 
