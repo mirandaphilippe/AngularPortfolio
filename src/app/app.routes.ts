@@ -9,12 +9,8 @@ export const ROUTES: Routes = [
         loadChildren: './user/user.module#UserModule'
     },
     {
-        path: 'auth',
-        loadChildren: './auth/auth.module#AuthModule'
-    },
-    {
         path: '',
-        redirectTo: 'u/jobs',
+        redirectTo: 'u/about',
         pathMatch: 'full'
     },
     {

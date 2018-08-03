@@ -5,7 +5,12 @@
 export const environment = {
   production: false,
   fireConfig: {
-   
+    apiKey: "AIzaSyC8pjQpOh2K_XcBhvYpk6gifzCaZ585IlI",
+    authDomain: "philippe-portifolio.firebaseapp.com",
+    databaseURL: "https://philippe-portifolio.firebaseio.com",
+    projectId: "philippe-portifolio",
+    storageBucket: "philippe-portifolio.appspot.com",
+    messagingSenderId: "853016257158"
   }
 };
 
