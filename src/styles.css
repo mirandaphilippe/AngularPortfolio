@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 *{
   font-family: 'Lato', sans-serif;
 
+}
+body {
+  background: linear-gradient(138deg, #C65CF8 -4.83%, #1A40E2 102.67%, #1A40E2 152.09%), #1A40E2;
+  min-height: 100vh;
 }
 .fight-form {
   display: flex;
@@ -52,6 +56,7 @@
 
 
 @media screen and (min-width:992px){
+ 
  .main-container {
    position: absolute;
    right: 0;

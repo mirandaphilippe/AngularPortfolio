@@ -1,22 +1,24 @@
-<div class="main-nav">
-    <div class="title">
-      <h1> PHILIPPE MIRANDA </h1>
-      <h2>Front-End Developer</h2>
-    </div>
-    <div class="nav-container">
-      <ul class="sections_menu">
-          <li class="menu-link"  routerLink="u/about" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
-            true}">Sobre</li>
-        <li class="menu-link" routerLink="u/jobs" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
-          true}">Portfolio</li>
-        <li class="menu-link"  routerLink="u/portfolio" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
-          true}">Testemunhos</li>
-        <li class="menu-link"  routerLink="u/portfolio" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
-          true}">Contrate</li>
-          <li class="menu-link"  routerLink="u/news" routerLinkActive="active-menu-link" routerLinkActiveOptions="{exact:
-            true}">blog</li>
-      </ul>
-    </div>
+<div class="navegation">
+  <div class="title" #title>
+    <h1> PHILIPPE MIRANDA </h1>
+    <h2>Desenvolvedor <br> Front-end</h2>
+  </div>
+  <div class="collapsed-nav menu-link" #collapsedNav>
+    {{pageName}}
+  </div>
+  <div class="main-nav" #sectionsMenu>
+      <div class="nav-container">
+        <ul class="sections_menu" >
+          <li class="menu-link" 
+            *ngFor="let p of pages" 
+            [routerLink]="p.route" 
+            routerLinkActive="active-menu-link" 
+            routerLinkActiveOptions="{exact: true}" > 
+          {{p.name}} 
+        </li>
+        </ul>
+      </div>
+  </div>
 </div>
 
 <div class="main-container">

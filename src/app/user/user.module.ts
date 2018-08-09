@@ -10,6 +10,7 @@ import { ROUTES } from './user.routes';
 import { FeedComponent } from './feed/feed.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { AboutComponent } from './about/about.component';
   declarations: [
     FeedComponent,
     PortfolioComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   providers: [
     UserService

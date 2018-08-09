@@ -1,14 +1,6 @@
 .main-nav {
   transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
     transition-property: width;
-    -moz-transition-property: width;
-    -webkit-transition-property: width;
-    -ms-transition-property: width;
-    -o-transition-property: width;
     background-color: #2948ff;
     background-image: linear-gradient(#2948ff,#396afc);
     width: 228px;
@@ -22,9 +14,34 @@
     z-index: 50;
     height: 100vh;
 }
+
 .title {
+  color: #fff;
+  margin: auto;
+  margin-top: 40%;
+  font-size: 120%;
+  width: 80%;
   text-align: center;
-  font-size:80%;
+  font-weight: 900;
+  line-height: 39px;
+  letter-spacing: 7px;
+  transition:all 0.5s ease;
+}
+.hidden-title {
+  transition:all 0.5s ease;
+  content: '';
+  height:0;
+  margin:0;
+}
+.title h2 {
+  font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #CCD8FF;
 }
 .nav-container {
   display: flex;
@@ -41,12 +58,17 @@
   padding: 0;
   list-style: none;
 }
-.menu-link {
+.menu-link,
+.collapsed-nav {
   transition: all .25s ease;
-  color: #ffffff80;
-  box-shadow: inset 0 -1px 0 #ffffff80;
+  color: #C4C4C4;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  text-align: center;
   box-sizing: content-box;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing:6px;
   margin: auto;
   margin-top: 20px;
   padding-bottom: 15px;
@@ -54,12 +76,43 @@
   width: 70%;
 }
 .menu-link:hover {
-  color: #fff;
-  font-weight: 900;
-  box-shadow: inset 0 -4px 0 #fff;
+  color: #07218C;
 }
-.active-menu-link {
-  color: #41ebaf;
+.collapsed-nav {
+  background: linear-gradient(138deg, #C65CF8 -4.83%, #1A40E2 102.67%, #1A40E2 152.09%), #1A40E2;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+    position:relative;
+    top:0;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    
+}
+.active-menu-link,
+.collapsed-nav{
+  color: #fff;
   font-weight: bold;
-  box-shadow: inset 0 -4px 0 #41ebaf;
+}
+
+@media (max-width:992px) {
+  .main-nav,
+  .main-container {
+   background:transparent;
+  }
+  .main-nav {
+    position:relative;
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  .menu-link {
+  
+  }
+  .menu-link,
+  .menu-link:hover {
+    box-shadow: none;
+  }
 }
